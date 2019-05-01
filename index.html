@@ -1,0 +1,176 @@
+<html>
+
+<head>
+
+ <title>Vote and Win</title>
+
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+ <style>
+
+  </style>
+
+</head>
+
+<body class="row">
+
+
+ <div class="container">
+
+ <div class="row margin-top-3">
+
+  <div class="col-sm-12">
+
+  <h3>How to participate</h3>
+
+  <strong>Step 1</strong>: Install  <a href="https://metamask.io/" target="_blank">the metamask plug-in</a>  create an account on main network, and load some Ether.
+  
+  <br>
+
+  <strong>Step 2</strong>: Buy tokens below by entering the total number of chips you want to buy.
+  <br>
+
+  <strong>Step 3</strong>: Vote for the game by entering their name and number. of tokens to vote with.
+
+  <br>
+  <strong>Step 4</strong>: the draw will give the result of the 100 winners
+
+
+  </div>
+
+ </div>
+
+ <div class="row margin-top-3">
+
+  <div class="col-sm-7">
+
+  <h2>character</h2>
+
+  <div class="table-responsive">
+
+   <table class="table table-bordered">
+
+   <thead>
+
+    <tr>
+
+    <th>character</th>
+
+    <th>counts</th>
+
+    </tr>
+
+   </thead>
+
+   <tbody id="candidate-rows">
+
+   </tbody>
+
+   </table>
+
+  </div>
+
+  </div>
+
+  <div class="col-sm-offset-1 col-sm-4">
+
+  <h2>Tickets</h2>
+
+  <div class="table-responsive">
+
+   <table class="table table-bordered">
+
+   <tr>
+
+    <th>Ticket Info</th>
+
+    <th>Value</th>
+
+   </tr>
+
+   <tr>
+
+    
+
+   <tr>
+
+   
+
+   <tr>
+
+    <td>Ticket Price</td>
+
+    <td id="token-cost"></td>
+
+   </tr>
+
+   <tr>
+
+    
+
+   </table>
+
+  </div>
+
+  </div>
+
+ </div>
+
+ <hr>
+
+ <div class="row margin-bottom-3">
+
+  <div class="col-sm-7 form">
+
+  <h2>Vote for Character</h2>
+
+  <div id="msg"></div>
+
+  <input type="text" id="candidate" class="form-control" placeholder="Enter the character name"/>
+
+
+  <br>
+
+  <br>
+
+  <input type="text" id="vote-tokens" class="form-control" placeholder="Total no. of tickets to vote"/>
+
+  <br>
+
+  <br>
+
+  <a href="#" onclick="App.voteForCandidate(); return false; window.location.reload()" class="btn btn-primary">Vote</a>
+
+  </div>
+
+  <div class="col-sm-offset-1 col-sm-4">
+
+  <div class="col-sm-12 form">
+
+   <h2>Buy Tickets</h2>
+
+   <div id="buy-msg"></div>
+
+   <input type="text" id="buy" class="col-sm-8" placeholder="Number of tickets to buy"/> 
+
+   <a href="#" onclick="App.buyTokens(); return false;" class="btn btn-primary">Buy</a>
+   
+
+  </div>
+
+
+  </div>
+
+ </div>
+
+ </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+
+<script src="index.js"></script>
+
+</html>
